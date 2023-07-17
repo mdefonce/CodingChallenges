@@ -1,0 +1,20 @@
+function LongestWord(sen) { 
+
+  sen = sen.replace(/[^\w\s]/g, '');
+  let wordArray = sen.split(' ');
+
+  let longestWord = wordArray[0];
+
+  for (let i=0; i<wordArray.length; i++) {
+    if(wordArray[i].length > longestWord.length) {
+      longestWord = wordArray[i];
+    }
+  }
+
+  // code goes here  
+  return longestWord; 
+
+}
+   
+// keep this function call here 
+console.log(LongestWord(readline()));
