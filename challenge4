@@ -1,0 +1,11 @@
+function addUp(num) {
+
+  let numAdd = 0;
+  
+	for(let i=0; i<num+1; i++) {
+		numAdd += i;
+	}
+	
+	return numAdd;
+	
+}
