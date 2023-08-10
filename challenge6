@@ -1,0 +1,17 @@
+function charCount(char, string) {
+
+  let count = 0; 
+  
+  for(let i=0; i<string.length; i++) {
+    if(string.charAt(i) === char) {
+			count++;
+    }
+  }
+  
+  return count;
+  
+}
+
+console.log(charCount("a", "edabit"));
+console.log(charCount("c", "Chamber of secrets"));
+console.log(charCount("b", "big fat bubble"));
